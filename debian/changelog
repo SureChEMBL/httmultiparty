@@ -1,0 +1,5 @@
+ruby-httmultiparty (0.3.16-1) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Yury Zavarin <yzavarin@ebi.ac.uk>  Mon, 11 Dec 2017 11:03:48 +0000

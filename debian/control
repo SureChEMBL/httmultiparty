@@ -1,0 +1,28 @@
+Source: ruby-httmultiparty
+Section: ruby
+Priority: optional
+Maintainer: Yury Zavarin <yzavarin@ebi.ac.uk>
+Build-Depends:
+ debhelper (>= 9~),
+ gem2deb,
+ rake,
+ ruby-fakeweb,
+ ruby-rspec
+Build-Depends-Indep:
+ ruby-httparty (>= 0.7.3),
+ ruby-mimemagic,
+ ruby-multipart-post,
+Standards-Version: 3.9.7
+XS-Ruby-Versions: all
+
+Package: ruby-httmultiparty
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends:
+ ruby | ruby-interpreter,
+ ruby-httparty (>= 0.7.3),
+ ruby-mimemagic,
+ ruby-multipart-post,
+ ${misc:Depends},
+ ${shlibs:Depends}
+Description: thin wrapper around HTTParty to provide multipart uploads
